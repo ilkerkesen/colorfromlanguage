@@ -10,7 +10,8 @@
 import argparse, os, json
 import h5py as h5
 import numpy as np
-from scipy.misc import imread, imresize
+from skimage.io import imread
+from skimage.transform import resize as imresize
 from tqdm import tqdm
 import pudb
 import torch
